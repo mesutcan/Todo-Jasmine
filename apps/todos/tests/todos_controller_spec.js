@@ -14,13 +14,10 @@ describe('Todos.todoListController', function() {
   describe('#remaining', function(){
     var remainingSpy,remaining, todos;  
     beforeEach(function() {
-    //  todos = Todos.store.find(Todos.Todo);
-    //  remainingSpy = spyOn(todos,'filterProperty');
       remaining = Todos.todoListController.remaining();
       });
       
     it('gets the length of the remaining todos', function(){
-    // expect(remainingSpy).toHaveBeenCalledWith(todos.filterProperty('isDone', false).get('length')); 
       expect(remaining).toEqual(2);
         }); 
   });
